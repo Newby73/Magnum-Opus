@@ -23,13 +23,18 @@
 
         .header {
             position: absolute;
-            top: calc(50% - 40px);
-            left: calc(50% - 255px);
+            top: calc(15%);
+            left: calc(50% - 183px);
         }
         .header div {
             color: aquamarine;
             font-family: 'Exo', sans-serif;
             float: left;
+            font-size: 27px;
+        }
+
+        .header span {
+            color: #E3DFD4 !important;
         }
 
         .homeButton {
@@ -46,7 +51,7 @@
         .login {
             position: absolute;
             top: calc(50% - 75px);
-            left: calc(50% - 50px);
+            left: calc(50% - 163px);
             height: 150px;
             width: 350px;
             padding: 10px;
@@ -144,7 +149,7 @@
         <div class="grad"></div>
         <div class="header">
             <div>
-                <h1>Magnus Opus</h1>
+                <h1>Magnum <span>Opus</span></h1>
             </div>
         </div>
 
@@ -154,6 +159,7 @@
             <input type="text" placeholder="Username" name="userid"><br>
             <input type="password" placeholder="Password" name="pswrd"><br>
             <input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="button" onclick="new_user(this.form)" value="Create New User"/>
         </div>
         </form>
     </div>
